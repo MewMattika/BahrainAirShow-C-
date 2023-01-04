@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15287E6C-5188-487C-BE13-60E6F4AA05D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BahrainAirshow</RootNamespace>
+    <AssemblyName>BahrainAirshow</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessForm.Designer.cs">
+      <DependentUpon>AccessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AircraftBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AircraftBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AircraftShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AircraftShowForm.Designer.cs">
+      <DependentUpon>AircraftShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntryForm.Designer.cs">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExhibitorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExhibitorsForm.Designer.cs">
+      <DependentUpon>ExhibitorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizersForm.Designer.cs">
+      <DependentUpon>OrganizersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductTableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitorsForm.Designer.cs">
+      <DependentUpon>VisitorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccessForm.resx">
+      <DependentUpon>AccessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AircraftShowForm.resx">
+      <DependentUpon>AircraftShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryForm.resx">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExhibitorsForm.resx">
+      <DependentUpon>ExhibitorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizersForm.resx">
+      <DependentUpon>OrganizersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorsForm.resx">
+      <DependentUpon>VisitorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AircraftBDDataSet.xsc">
+      <DependentUpon>AircraftBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AircraftBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AircraftBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AircraftBDDataSet.xss">
+      <DependentUpon>AircraftBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductTableDataSet.xsc">
+      <DependentUpon>ProductTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductTableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductTableDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductTableDataSet.xss">
+      <DependentUpon>ProductTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannery1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\continue-button11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoothL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoothM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoothS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StageAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StreetPer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KidsArea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aircraft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\longIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccessGranted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccessDennied.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExibitonFloorPlan.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoothCorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adcom-systems-united-40-uav.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aermacchi-mb339_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aero-l39-albatros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aerospatiale-gazelle-light-utility-helicopter-france.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airbus_380_Emirates.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boeing_707.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ilyushin_Il-62M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mitsubishi_Regional_Jet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AircraftBD.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AircraftBD_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AircraftBD.mdf</DependentUpon>
+    </Content>
+    <Content Include="ProductTable.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProductTable_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ProductTable.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
